@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True   
+DEBUG = config("DEBUG", default=False, cast=bool)   #manuel
     
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']   #manuel
 
 URL_CLIENTES_EXTERNOS = config('URL_CLIENTES_EXTERNOS', default='http://127.0.0.1:8000/api/')
 
