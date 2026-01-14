@@ -90,26 +90,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'historia_clinica.wsgi.application'
 
-DATABASE_URL = config("DATABASE_URL", default=None)
+DATABASE_URL = config("DATABASE_URL")
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
-if DATABASE_URL:  #manuel
-    DATABASES = {
-        "default": dj_database_url.parse(DATABASE_URL)
-    }
-else:     #manuel
-    DATABASES = {
-            "default": {
-                "ENGINE": "django.db.backends.mysql",
-                "NAME": config("DB_NAME"),
-                "USER": config("DB_USER"),
-                "PASSWORD": config("DB_PASSWORD"),
-                "HOST": config("DB_HOST"),
-                "PORT": config("DB_PORT"),
-                "OPTIONS": {"charset": "utf8mb4"},
-            },
-        }
+DATABASES = {
+    "default": dj_database_url.parse(DATABASE_URL)
+}
+# if DATABASE_URL:  #manuel
+#     DATABASES = {
+#         "default": dj_database_url.parse(DATABASE_URL)
+#     }
+# else:     #manuel
+#     DATABASES = {
+#             "default": {
+#                 "ENGINE": "django.db.backends.mysql",
+#                 "NAME": config("DB_NAME"),
+#                 "USER": config("DB_USER"),
+#                 "PASSWORD": config("DB_PASSWORD"),
+#                 "HOST": config("DB_HOST"),
+#                 "PORT": config("DB_PORT"),
+#                 "OPTIONS": {"charset": "utf8mb4"},
+#             },
+#         }
 
 
 # Password validation
