@@ -267,5 +267,6 @@ ALLOWED_HOSTS = [   #manuel
     "api.temporal.sbs",
     "temporal.sbs",
     ".onrender.com",
+    'mi_historia_clinica.onrender.com',
 ]
 CORS_ALLOW_CREDENTIALS = True
