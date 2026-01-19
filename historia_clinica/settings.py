@@ -27,7 +27,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)   #manuel
     
 #ALLOWED_HOSTS = ['*']   #manuel
 
-URL_CLIENTES_EXTERNOS = config('URL_CLIENTES_EXTERNOS', default='http://127.0.0.1:8000/api/')
+URL_CLIENTES_EXTERNOS = config('URL_CLIENTES_EXTERNOS', default='https://docalendar.com.co/api/')
 
 # Application definition
 
