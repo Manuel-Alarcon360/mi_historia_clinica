@@ -271,4 +271,4 @@ ALLOWED_HOSTS = [   #manuel
     ".onrender.com",
     'mi_historia_clinica.onrender.com',
 ]
-CORS_ALLOW_CREDENTIALS = False
+CORS_ALLOW_CREDENTIALS = True
