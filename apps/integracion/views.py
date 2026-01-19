@@ -25,7 +25,6 @@ class TokenIntegracionDetailView(generics.RetrieveUpdateDestroyAPIView):
 def obtener_token_aplicacion(nombre_aplicacion):
     try:
         token_obj = TokenIntegracion.objects.get(nombre_aplicacion=nombre_aplicacion)
-        print("TOKEN OBTENIDO ===>", token_obj.token_aplicacion)  # Manuel borrar despues de pruebas
         return token_obj.token_aplicacion
     except TokenIntegracion.DoesNotExist:
         return None
@@ -103,16 +102,12 @@ def _procesar_respuesta_externa(response):
 def obtener_clientes_externos(request):
     try:
         token = obtener_token_aplicacion("DoCalendar")
-        print("URI CON PAGINACION -.1111 ===>", token)  # Manuel borrar despues de pruebas
         if not token:
             return Response(
                 {"error": "Token de autenticación no encontrado para DoCalendar"},
                 status=status.HTTP_401_UNAUTHORIZED,
             )
         uri = _construir_uri_con_paginacion(request, "clientes/list_cliente/")
-        print("URI CON PAGINACION ===>", uri)  # Manuel borrar despues de pruebas
-        print("URI CON PAGINACION ===>", token)  # Manuel borrar despues de pruebas
-
         response = _realizar_peticion_externa(token, uri)
         return _procesar_respuesta_externa(response)
 
@@ -126,13 +121,7 @@ def obtener_clientes_externos(request):
             {"error": f"Error interno del servidor: {str(e)}"},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR,
         )
-@api_view(['GET'])
-def test_requests(request):
-    try:
-        r = requests.get("https://docalendar.com.co/api/clientes/list_cliente/?page=1", timeout=10)
-        return Response({"status": r.status_code, "data": r.json()})
-    except Exception as e:
-        return Response({"error": str(e)}, status=500)
+
 
 @api_view(["GET"])
 def obtener_citas(request):
