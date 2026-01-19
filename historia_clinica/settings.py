@@ -264,6 +264,7 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
     "https://mine-opticaoscar.onrender.com",
+    "https://eb36ff5b3f3e.ngrok-free.app",
 ]
 ALLOWED_HOSTS = [   #manuel
     "api.temporal.sbs",

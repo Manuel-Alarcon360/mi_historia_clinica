@@ -25,6 +25,7 @@ class TokenIntegracionDetailView(generics.RetrieveUpdateDestroyAPIView):
 def obtener_token_aplicacion(nombre_aplicacion):
     try:
         token_obj = TokenIntegracion.objects.get(nombre_aplicacion=nombre_aplicacion)
+        print("TOKEN OBTENIDO ===>", token_obj.token_aplicacion)  # Manuel borrar despues de pruebas
         return token_obj.token_aplicacion
     except TokenIntegracion.DoesNotExist:
         return None
