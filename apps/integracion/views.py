@@ -46,6 +46,8 @@ def _construir_uri_con_filtros(request, uri: str):
 
 
 def _realizar_peticion_externa(token, uri):
+    url = settings.URL_CLIENTES_EXTERNOS + uri  # manuel borrar despues de pruebas
+    print("URL EXTERNA ===>", url)              # manuel borrar despues de pruebas
     headers = {
         "Authorization": f"token_app {token}",
         "Content-Type": "application/json",
