@@ -27,7 +27,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)   #manuel
     
 #ALLOWED_HOSTS = ['*']   #manuel
 
-URL_CLIENTES_EXTERNOS = config('URL_CLIENTES_EXTERNOS', default='https://25951a85fe9b.ngrok-free.app/api/')
+URL_CLIENTES_EXTERNOS = config('URL_CLIENTES_EXTERNOS', default='https://docalendar.com.co/api/')
 
 # Application definition
 
