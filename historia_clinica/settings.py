@@ -257,8 +257,8 @@ LOGGING = {
 # Configuración CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    "https://temporal.sbs",   #manuel
-    "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
+   # "https://temporal.sbs",   #manuel
+   #"https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
     "https://mine_opticaoscar.onrender.com", #manuel  
 ]
 CSRF_TRUSTED_ORIGINS = [
@@ -270,4 +270,4 @@ ALLOWED_HOSTS = [   #manuel
     ".onrender.com",
     'mi_historia_clinica.onrender.com',
 ]
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = False
