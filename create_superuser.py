@@ -12,7 +12,7 @@ if not User.objects.filter(username="admin").exists():
     User.objects.create_superuser(
         username="admin",
         email="admin@admin.com",
-        password="admin12345"
+        password="admin12345"   # Cambiar esta contraseña por una más segura en producción o en la terminal de render crear un admin conuna contraseña mas segura
     )
     print("Superuser creado")
 else:
