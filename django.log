@@ -1861,3 +1861,11 @@ INFO 2025-12-23 16:01:00,157 views 33104 21052 Lista de grupos disponible: {'cou
 INFO 2025-12-23 16:01:00,161 views 33104 36140 Lista de usuarios obtenida exitosamente
 INFO 2025-12-23 16:41:54,177 views 33104 34436 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
 INFO 2025-12-23 16:41:54,183 views 33104 34532 Lista de usuarios obtenida exitosamente
+INFO 2026-02-02 13:20:07,566 views 34364 29268 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-02 13:20:07,579 views 34364 1388 Lista de usuarios obtenida exitosamente
+INFO 2026-02-02 18:04:29,232 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-02 18:06:21,049 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-02 18:07:56,512 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-02 18:11:27,881 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-02 18:12:41,805 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-02 18:13:05,117 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com

@@ -91,32 +91,33 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'historia_clinica.wsgi.application'
 
-DATABASE_URL = config("DATABASE_URL")
+# DATABASE_URL = config("DATABASE_URL")  #manuel produccion
+DATABASE_URL = config("DATABASE_URL", default=None)
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-DATABASES = {    #manuel
-    "default": dj_database_url.parse(
-        DATABASE_URL,
-        conn_max_age=600,
-        ssl_require=True
-    )
-}
-# if DATABASE_URL:  #manuel
-#     DATABASES = {
-#         "default": dj_database_url.parse(DATABASE_URL)
-#     }
-# else:     #manuel
-#     DATABASES = {
-#             "default": {
-#                 "ENGINE": "django.db.backends.mysql",
-#                 "NAME": config("DB_NAME"),
-#                 "USER": config("DB_USER"),
-#                 "PASSWORD": config("DB_PASSWORD"),
-#                 "HOST": config("DB_HOST"),
-#                 "PORT": config("DB_PORT"),
-#                 "OPTIONS": {"charset": "utf8mb4"},
-#             },
-#         }
+# DATABASES = {    #manuel
+#     "default": dj_database_url.parse(
+#         DATABASE_URL,
+#         conn_max_age=600,
+#         ssl_require=True
+#     )
+# }
+if DATABASE_URL:  #manuel
+    DATABASES = {
+        "default": dj_database_url.parse(DATABASE_URL)
+    }
+else:     #manuel
+    DATABASES = {
+            "default": {
+                "ENGINE": "django.db.backends.mysql",
+                "NAME": config("DB_NAME"),
+                "USER": config("DB_USER"),
+                "PASSWORD": config("DB_PASSWORD"),
+                "HOST": config("DB_HOST"),
+                "PORT": config("DB_PORT"),
+                "OPTIONS": {"charset": "utf8mb4"},
+            },
+        }
 
 
 # Password validation
@@ -266,10 +267,11 @@ CSRF_TRUSTED_ORIGINS = [
     "https://mine-opticaoscar.onrender.com",
     "https://eb36ff5b3f3e.ngrok-free.app",
 ]
-ALLOWED_HOSTS = [   #manuel
-    "api.temporal.sbs",
-    "temporal.sbs",     
-    ".onrender.com",
-    'mi_historia_clinica.onrender.com',
-]
+# ALLOWED_HOSTS = [   #manuel
+#     "api.temporal.sbs",
+#     "temporal.sbs",     
+#     ".onrender.com",
+#     'mi_historia_clinica.onrender.com',
+# ]
+ALLOWED_HOSTS = ["*"]  #manuel - Desarrollo
 CORS_ALLOW_CREDENTIALS = True
