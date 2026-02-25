@@ -43,8 +43,8 @@ urlpatterns = [
 ]
 
 # Servir archivos de media en desarrollo
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=str(settings.MEDIA_ROOT))
+# if settings.DEBUG:
+#     urlpatterns += static(settings.MEDIA_URL, document_root=str(settings.MEDIA_ROOT))
 
     
 # if settings.DEBUG:    # Inicial

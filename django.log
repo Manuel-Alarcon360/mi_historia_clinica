@@ -1905,3 +1905,7 @@ INFO 2026-02-24 17:22:44,802 views 45396 8752 Lista de grupos disponible: {'coun
 INFO 2026-02-24 17:22:44,846 views 45396 28240 Lista de usuarios obtenida exitosamente
 INFO 2026-02-25 09:03:26,145 views 45396 35804 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
 INFO 2026-02-25 09:03:26,167 views 45396 14472 Lista de usuarios obtenida exitosamente
+INFO 2026-02-25 15:52:21,444 views 32256 40012 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-25 15:52:21,459 views 32256 16292 Lista de usuarios obtenida exitosamente
+INFO 2026-02-25 16:23:02,770 views 34000 44492 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-25 16:23:02,791 views 34000 31996 Lista de usuarios obtenida exitosamente
