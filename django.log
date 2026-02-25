@@ -1869,3 +1869,39 @@ INFO 2026-02-02 18:07:56,512 views 35184 13168 Solicitud para obtener firma digi
 INFO 2026-02-02 18:11:27,881 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
 INFO 2026-02-02 18:12:41,805 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
 INFO 2026-02-02 18:13:05,117 views 35184 13168 Solicitud para obtener firma digital del usuario: test44@gmail.com
+INFO 2026-02-19 17:28:26,076 views 39932 3896 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-19 17:28:26,106 views 39932 31376 Lista de usuarios obtenida exitosamente
+INFO 2026-02-19 19:43:48,885 views 39932 28344 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-19 19:43:48,900 views 39932 11552 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 09:26:11,746 views 37124 23508 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 09:26:11,775 views 37124 33348 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 09:29:53,039 views 37124 6844 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 09:29:53,056 views 37124 8752 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:07:31,642 views 45396 16120 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:07:31,663 views 45396 42528 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:07:35,208 views 45396 42528 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:07:35,219 views 45396 25732 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:17:36,072 views 45396 42208 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:17:36,092 views 45396 35308 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:20:29,055 views 45396 42208 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:20:29,067 views 45396 35308 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:28:59,397 views 45396 31364 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:28:59,409 views 45396 37972 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:31:25,593 views 45396 31364 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:31:25,606 views 45396 37972 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:34:34,504 views 45396 31364 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:34:34,512 views 45396 37972 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:35:07,474 views 45396 31364 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:35:07,490 views 45396 37972 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:36:08,199 views 45396 45516 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:36:08,209 views 45396 40536 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:36:35,955 views 45396 45956 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:36:35,982 views 45396 28148 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 14:37:06,056 views 45396 44692 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 14:37:06,069 views 45396 1888 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 16:48:38,330 views 45396 12264 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 16:48:38,345 views 45396 30628 Lista de usuarios obtenida exitosamente
+INFO 2026-02-24 17:22:44,802 views 45396 8752 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-24 17:22:44,846 views 45396 28240 Lista de usuarios obtenida exitosamente
+INFO 2026-02-25 09:03:26,145 views 45396 35804 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-02-25 09:03:26,167 views 45396 14472 Lista de usuarios obtenida exitosamente

@@ -214,6 +214,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'firmas_digitales'
 
+DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440 
+FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -261,6 +264,9 @@ CORS_ALLOWED_ORIGINS = [
     #"https://temporal.sbs",   #manuel
     "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
     "https://mine-opticaoscar.onrender.com", #manuel  
+    # "https://mine-optica-oscar.vercel.app",
+    "https://temporal.sbs",
+    "https://www.temporal.sbs",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
