@@ -16,6 +16,7 @@ from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 import os
+import cloudinary
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -56,6 +57,8 @@ THIRD_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'requests',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
@@ -211,9 +214,14 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #manuel
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
 # Media files (User uploaded files)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'firmas_digitales'
-
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME' : 'da2fead2m',
+    'API_KEY' : '313663849421678',
+    'API_SECRET' : 'SYj1nOHejoDJBDD2m4jZINtqgkU',
+}
 DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440 
 
