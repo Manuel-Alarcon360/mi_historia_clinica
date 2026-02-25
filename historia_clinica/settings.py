@@ -263,8 +263,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     #"https://temporal.sbs",   #manuel
     "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
-    "https://mine-opticaoscar.onrender.com", #manuel  
-    # "https://mine-optica-oscar.vercel.app",
+    #"https://mine-opticaoscar.onrender.com", #manuel  
+    "https://mine-optica-oscar.vercel.app",
     "https://temporal.sbs",
     "https://www.temporal.sbs",
 ]
