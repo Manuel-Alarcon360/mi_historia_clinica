@@ -18,5 +18,6 @@ gunicorn   #manuel
 whitenoise  #manuel
 psycopg2-binary  #manuel
 dj-database-url  #manuel
-pip install cloudinary
-pip install django-cloudinary-storage
+
+cloudinary==1.44.1
+django-cloudinary-storage==0.3.0
