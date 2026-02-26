@@ -212,7 +212,7 @@ USE_TZ = True
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #manuel
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
 # Media files (User uploaded files)
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
