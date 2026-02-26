@@ -27,9 +27,6 @@ class Evento(models.Model):
     fecha_actualizacion = models.DateField(auto_now=True)
     es_principal = models.BooleanField(default=False,null=True)
     
-    def save(self, *args, **kwargs):
-        print("STORAGE TYPE:", type(self.imagen_evento.storage))
-        super().save(*args, **kwargs)
     class Meta:
         db_table = 'Eventos'
         verbose_name_plural = 'Eventos'
