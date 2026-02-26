@@ -77,7 +77,7 @@ class EventoCreateView(CreateAPIView):    #Nuevo    #ok
         print("🔥 FIELD STORAGE CLASS:", instance.imagen_evento.storage.__class__)
         print("DEFAULT STORAGE:", settings.DEFAULT_FILE_STORAGE)
         print("STORAGE CLASS:", type(default_storage))
-        serializer.save(creado_por=self.request.user)
+        # serializer.save(creado_por=self.request.user)
     
 class EventosAdminView(ListAPIView):    #ok
     
