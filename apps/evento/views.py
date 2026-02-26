@@ -71,9 +71,9 @@ class EventoCreateView(CreateAPIView):    #Nuevo    #ok
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
     
-    print("DEFAULT STORAGE:", settings.DEFAULT_FILE_STORAGE)
-    print("STORAGE CLASS:", type(default_storage))
     def perform_create(self, serializer):
+        print("DEFAULT STORAGE:", settings.DEFAULT_FILE_STORAGE)
+        print("STORAGE CLASS:", type(default_storage))
         serializer.save(creado_por=self.request.user)
     
 class EventosAdminView(ListAPIView):    #ok
