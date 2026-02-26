@@ -212,7 +212,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #manuel
-MEDIA_URL = '/media/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
 # Media files (User uploaded files)
 # MEDIA_URL = '/media/'
