@@ -209,31 +209,27 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #manuel
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
 # Media files (User uploaded files)
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
-# STORAGES = {
-#     "default": {
-#         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
-#     },
-#     "staticfiles": {
-#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-#     },
-# }
+#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+STORAGES = {
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME' : 'da2fead2m',
     'API_KEY' : '313663849421678',
     'API_SECRET' : 'SYj1nOHejoDJBDD2m4jZINtqgkU',
 }
-cloudinary.config(
-    cloud_name=CLOUDINARY_STORAGE['CLOUD_NAME'],
-    api_key=CLOUDINARY_STORAGE['API_KEY'],
-    api_secret=CLOUDINARY_STORAGE['API_SECRET'],
-)
 DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440 
 
@@ -283,8 +279,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     #"https://temporal.sbs",   #manuel
     "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
-    #"https://mine-opticaoscar.onrender.com", #manuel  
-    "https://mine-optica-oscar.vercel.app",
+    "https://mine-opticaoscar.onrender.com", #manuel  
+    # "https://mine-optica-oscar.vercel.app",
     "https://temporal.sbs",
     "https://www.temporal.sbs",
 ]
