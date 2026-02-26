@@ -209,21 +209,21 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #manuel
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' #manuel
 # Media files (User uploaded files)
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
-STORAGES = {
-    "default": {
-        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
-    },
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#     "default": {
+#         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+#     },
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME' : 'da2fead2m',
     'API_KEY' : '313663849421678',
