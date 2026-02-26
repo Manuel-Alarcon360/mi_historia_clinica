@@ -20,6 +20,8 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from django.utils.decorators import method_decorator
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
+from django.conf import settings
+from django.core.files.storage import default_storage
 
 # Create your views here.
 
@@ -68,7 +70,9 @@ class EventoCreateView(CreateAPIView):    #Nuevo    #ok
     serializer_class = EventoSerializer
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
-
+    
+    print("DEFAULT STORAGE:", settings.DEFAULT_FILE_STORAGE)
+    print("STORAGE CLASS:", type(default_storage))
     def perform_create(self, serializer):
         serializer.save(creado_por=self.request.user)
     
