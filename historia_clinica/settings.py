@@ -217,7 +217,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-# STORAGES = {
+# STORAGES = {            #Descomentar para produccion y comentar linea - DEFAULT_FILE_STORAGE
 #     "default": {
 #         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
 #     },
@@ -226,9 +226,9 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 #     },
 # }
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME' : 'da2fead2m',
-    'API_KEY' : '313663849421678',
-    'API_SECRET' : 'SYj1nOHejoDJBDD2m4jZINtqgkU',
+   'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': config('CLOUDINARY_API_KEY'),
+    'API_SECRET': config('CLOUDINARY_API_SECRET'),
 }
 DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440 
