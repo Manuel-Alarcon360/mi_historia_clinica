@@ -2003,3 +2003,11 @@ INFO 2026-02-27 16:39:30,302 views 30388 38600 Usuario borrar3@ecci.edu.co regis
 INFO 2026-02-27 16:39:30,302 views 30388 38600 Solicitud para crear firma digital del usuario: 13
 INFO 2026-02-27 16:39:30,315 views 30388 38600 Firma digital creada exitosamente para el usuario: 13
 INFO 2026-02-27 16:39:30,347 views 30388 38600 Lista de usuarios obtenida exitosamente
+INFO 2026-03-05 09:29:49,624 views 28712 38536 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-05 09:29:49,666 views 28712 40092 Lista de usuarios obtenida exitosamente
+INFO 2026-03-05 09:29:56,782 views 28712 40092 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-05 09:29:56,809 views 28712 38536 Lista de usuarios obtenida exitosamente
+INFO 2026-03-05 09:31:03,314 views 28712 18416 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-05 09:31:03,349 views 28712 46308 Lista de usuarios obtenida exitosamente
+INFO 2026-03-05 09:32:28,707 views 28712 37488 Solicitud para obtener firma digital del usuario: manuelfe.alarconro@ecci.edu.co
+INFO 2026-03-05 09:46:26,795 views 28712 6924 Solicitud para obtener firma digital del usuario: manuelfe.alarconro@ecci.edu.co
