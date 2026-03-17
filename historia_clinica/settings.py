@@ -105,12 +105,12 @@ DATABASE_URL = config("DATABASE_URL", default=None)
 #         ssl_require=True
 #     )
 # }
-if DATABASE_URL:  #manuel
-    DATABASES = {
-        "default": dj_database_url.parse(DATABASE_URL)
-    }
-else:     #manuel
-    DATABASES = {
+# if DATABASE_URL:  #manuel
+#     DATABASES = {
+#         "default": dj_database_url.parse(DATABASE_URL)
+#     }
+# else:     #manuel
+DATABASES = {
             "default": {
                 "ENGINE": "django.db.backends.postgresql",
                 "NAME": config("DB_NAME"),
@@ -120,7 +120,7 @@ else:     #manuel
                 "PORT": config("DB_PORT"),
                 "OPTIONS": {"charset": "utf8mb4"},
             },
-        }
+    }
 
 
 # Password validation
