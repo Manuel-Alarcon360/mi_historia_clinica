@@ -40,7 +40,7 @@ def crear_formulario(request):
         serializer = CampoSerializer(data=campo_data_clean)
         if serializer.is_valid():
             serializer.save()
-            logger.info(f"Campo creado con éxito: {serializer.data.get("nombre_campo")}")
+            logger.info(f"Campo creado con éxito: {serializer.data.get('nombre_campo')}")
         else:
             logger.error(f"Error crear campo: {serializer.errors}")
             return Response({
