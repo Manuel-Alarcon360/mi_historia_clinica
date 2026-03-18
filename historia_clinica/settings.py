@@ -277,17 +277,14 @@ LOGGING = {
 # Configuración CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    #"https://temporal.sbs",   #manuel
-    "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
-    "https://mine-opticaoscar.onrender.com", #manuel  
-    # "https://mine-optica-oscar.vercel.app",
-    "https://temporal.sbs",
-    "https://www.temporal.sbs",
+    "https://doctorosquitar.com",
+    "https://www.doctorosquitar.com",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
     "https://mine-opticaoscar.onrender.com",
-    "https://eb36ff5b3f3e.ngrok-free.app",
+    "https://doctorosquitar.com",
+    "https://www.doctorosquitar.com",
 ]
 # ALLOWED_HOSTS = [   #manuel
 #     "api.temporal.sbs",
@@ -295,5 +292,9 @@ CSRF_TRUSTED_ORIGINS = [
 #     ".onrender.com",
 #     'mi_historia_clinica.onrender.com',
 # ]
-ALLOWED_HOSTS = ["*"]  #manuel - Desarrollo
+#ALLOWED_HOSTS = ["*"]  #manuel - Desarrollo
+ALLOWED_HOSTS = [
+    "doctorosquitar.com",
+    "www.doctorosquitar.com",
+]
 CORS_ALLOW_CREDENTIALS = True
