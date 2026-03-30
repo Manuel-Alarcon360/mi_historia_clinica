@@ -2011,3 +2011,13 @@ INFO 2026-03-05 09:31:03,314 views 28712 18416 Lista de grupos disponible: {'cou
 INFO 2026-03-05 09:31:03,349 views 28712 46308 Lista de usuarios obtenida exitosamente
 INFO 2026-03-05 09:32:28,707 views 28712 37488 Solicitud para obtener firma digital del usuario: manuelfe.alarconro@ecci.edu.co
 INFO 2026-03-05 09:46:26,795 views 28712 6924 Solicitud para obtener firma digital del usuario: manuelfe.alarconro@ecci.edu.co
+INFO 2026-03-20 15:11:55,775 views 58276 26552 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-20 15:11:55,792 views 58276 49192 Lista de usuarios obtenida exitosamente
+INFO 2026-03-25 10:16:16,921 views 31048 39340 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-25 10:16:16,936 views 31048 48208 Lista de usuarios obtenida exitosamente
+INFO 2026-03-25 10:16:29,814 views 31048 39340 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-25 10:16:29,826 views 31048 48208 Lista de usuarios obtenida exitosamente
+INFO 2026-03-25 10:19:24,284 views 31048 39340 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-25 10:19:24,300 views 31048 48208 Lista de usuarios obtenida exitosamente
+INFO 2026-03-25 10:19:59,479 views 31048 48208 Solicitud para obtener firma digital del usuario: oscarmauriciog@hotmail.com
+INFO 2026-03-25 10:20:33,855 views 31048 48208 Solicitud para obtener firma digital del usuario: oscarmauriciog@hotmail.com
