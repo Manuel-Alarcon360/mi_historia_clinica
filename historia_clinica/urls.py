@@ -39,6 +39,8 @@ urlpatterns = [
         path('integracion/', include('apps.integracion.urls'), name="integracion"),
         path('historia/', include('apps.historias.urls'), name="historias"),
         path('evento/', include('apps.evento.urls'), name="eventos"),
+        path('cliente/', include('apps.clientes.urls'), name="clientes"), 
+        path('servicio/', include('apps.servicios.urls'), name="servicios"),
     ]))
 ]
 

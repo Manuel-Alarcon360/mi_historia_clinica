@@ -2021,3 +2021,11 @@ INFO 2026-03-25 10:19:24,284 views 31048 39340 Lista de grupos disponible: {'cou
 INFO 2026-03-25 10:19:24,300 views 31048 48208 Lista de usuarios obtenida exitosamente
 INFO 2026-03-25 10:19:59,479 views 31048 48208 Solicitud para obtener firma digital del usuario: oscarmauriciog@hotmail.com
 INFO 2026-03-25 10:20:33,855 views 31048 48208 Solicitud para obtener firma digital del usuario: oscarmauriciog@hotmail.com
+INFO 2026-03-30 17:06:50,801 views 37748 54076 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-03-30 17:06:50,821 views 37748 3684 Lista de usuarios obtenida exitosamente
+INFO 2026-03-31 08:31:55,607 views 22888 19164 Usuario para cambio de contraseña obtenido exitosamente: oscarmauriciog@hotmail.com
+INFO 2026-03-31 08:31:56,095 views 22888 19164 Contraseña cambiada exitosamente para el usuario: oscarmauriciog@hotmail.com
+INFO 2026-04-01 12:28:53,988 views 14416 46276 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-04-01 12:28:54,016 views 14416 57916 Lista de usuarios obtenida exitosamente
+INFO 2026-04-08 15:22:02,226 views 45160 46148 Lista de grupos disponible: {'count': 2, 'next': None, 'previous': None, 'results': [{'id': 3, 'name': 'DOCTOR', 'permissions': []}, {'id': 4, 'name': 'SECRETARIA', 'permissions': []}]}
+INFO 2026-04-08 15:22:02,237 views 45160 34268 Lista de usuarios obtenida exitosamente

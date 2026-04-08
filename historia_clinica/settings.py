@@ -49,6 +49,8 @@ LOCAL_APPS = [
     'apps.historias',
     'apps.auditoria',
     'apps.evento',
+    'apps.clientes',
+    'apps.servicios',
 ]
 
 THIRD_APPS = [
