@@ -27,6 +27,7 @@ class Paciente(models.Model):
         null=False, 
         blank=False
     )
+    direccion = models.CharField(max_length=200, null=True, blank=True)
     ocupacion = models.CharField(max_length=250, null=False, blank=False)
     responsable = models.CharField(max_length=250, null=True, blank=True)
     tel_responsable = models.CharField(max_length=30, null=True, blank=True)
