@@ -49,6 +49,8 @@ LOCAL_APPS = [
     'apps.historias',
     'apps.auditoria',
     'apps.evento',
+    'apps.clientes',
+    'apps.servicios',
 ]
 
 THIRD_APPS = [
@@ -105,6 +107,12 @@ DATABASE_URL = config("DATABASE_URL", default=None)
 #         ssl_require=True
 #     )
 # }
+# if DATABASE_URL:  #manuel
+#     DATABASES = {
+#         "default": dj_database_url.parse(DATABASE_URL)
+#     }
+# else:     #manuel
+#DATABASES = {
 # if DATABASE_URL:  #manuel
 #     DATABASES = {
 #         "default": dj_database_url.parse(DATABASE_URL)
@@ -217,7 +225,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
 #DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-STORAGES = {
+STORAGES = {            #Descomentar para produccion y comentar linea - DEFAULT_FILE_STORAGE
     "default": {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
