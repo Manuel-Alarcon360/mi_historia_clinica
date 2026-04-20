@@ -97,7 +97,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'historia_clinica.wsgi.application'
 
 # DATABASE_URL = config("DATABASE_URL")  #manuel produccion
-#DATABASE_URL = config("DATABASE_URL", default=None)
+DATABASE_URL = config("DATABASE_URL", default=None)
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 # DATABASES = {    #manuel
@@ -218,15 +218,15 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 # Media files (User uploaded files)
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-# STORAGES = {            #Descomentar para produccion y comentar linea - DEFAULT_FILE_STORAGE
-#     "default": {
-#         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
-#     },
-#     "staticfiles": {
-#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-#     },
-# }
+#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+STORAGES = {            #Descomentar para produccion y comentar linea - DEFAULT_FILE_STORAGE
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 CLOUDINARY_STORAGE = {
    'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': config('CLOUDINARY_API_KEY'),
@@ -279,17 +279,14 @@ LOGGING = {
 # Configuración CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    #"https://temporal.sbs",   #manuel
-    "https://www.temporal.sbs", #manuel    estops 3 se deben de cambiar segun el proveredor en este caso render
-    "https://mine-opticaoscar.onrender.com", #manuel  
-    # "https://mine-optica-oscar.vercel.app",
-    "https://temporal.sbs",
-    "https://www.temporal.sbs",
+    "https://doctorosquitar.com",
+    "https://www.doctorosquitar.com",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
     "https://mine-opticaoscar.onrender.com",
-    "https://eb36ff5b3f3e.ngrok-free.app",
+    "https://doctorosquitar.com",
+    "https://www.doctorosquitar.com",
 ]
 # ALLOWED_HOSTS = [   #manuel
 #     "api.temporal.sbs",
@@ -297,5 +294,9 @@ CSRF_TRUSTED_ORIGINS = [
 #     ".onrender.com",
 #     'mi_historia_clinica.onrender.com',
 # ]
-ALLOWED_HOSTS = ["*"]  #manuel - Desarrollo
+#ALLOWED_HOSTS = ["*"]  #manuel - Desarrollo
+ALLOWED_HOSTS = [
+    "doctorosquitar.com",
+    "www.doctorosquitar.com",
+]
 CORS_ALLOW_CREDENTIALS = True
